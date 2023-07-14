@@ -20,7 +20,7 @@ public:
         
         while(odd->next != NULL && even->next != NULL){
             odd->next = even->next;
-            odd = even->next;
+            odd = odd->next;
             even->next = odd->next;
             even = even->next;
         }
